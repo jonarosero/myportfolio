@@ -8,7 +8,7 @@ function Banner() {
 
   const [loopNum, setLoopNum] = useState(0);
   const [isDeliting, setIsDeliting] = useState(false);
-  const toRotate = ["Web Developer", "Backend Developer", "Scrum Master"];
+  const toRotate = ["Web Developer", "Backend Developer"];
   const [delta, setDelta] = useState(300-Math.random()*100);
   const [text, setText] = useState('');
   const period = 2000;
@@ -47,11 +47,11 @@ function Banner() {
         <Container>
             <Row className='align-items-center'>
                 <Col xs={12} md={6} xl={7}>
-                    <span className='tagline'>Welcome to my Portfolio</span>
-                    <h1>{`Hi I'm Jonathan `}<span className='wrap'>{text}</span></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed elementum justo. Nulla ac luctus ipsum, at fermentum magna. Praesent commodo, dui sit amet ultrices malesuada, lacus nisl sodales felis, sit amet porttitor augue eros a lorem. Aliquam dictum augue ut justo tempor viverra. Pellentesque elit velit, ultrices et turpis in, accumsan ultricies lorem.</p>
-                    <a href="https://wa.link/md4vzs">
-                    <button >Let's connect<ArrowRightCircle size={25}/></button></a>
+                    <span className='tagline'>Bienvenido a mi página Web</span>
+                    <h1>{`I'm Jonathan Rosero`}<br></br><span className='wrap'>{text}</span></h1>
+                    <p>Ingeniero en Sistemas, estudiante del Master de Ingeniería de Software y Dungeon Master. Me apasiona el desarrollo Backend aunque también tengo experiencia en desarrollo web, como docente universitario de desarrollo de aplicaciones nativas en nube. Como desarrollador, me enorgullece trabajar en colaboración con otros para contribuir a soluciones innovadoras que satisfagan las necesidades del cliente.</p>
+                    <a href="https://wa.link/md4vzs"> 
+                    <button >Escríbeme<ArrowRightCircle size={25}/></button></a>
                 </Col>
                 <Col xs={12} md={6} xl={5}>
                   <img src={headerImg} alt='Headder Img'/>

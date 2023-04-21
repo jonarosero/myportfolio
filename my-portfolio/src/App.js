@@ -1,11 +1,7 @@
 import './App.css';
-import Banner from './components/Banner';
+import { Banner, Contact, Skills } from './components';
 import Projects from './components/Projects';
-import Skills from './components/Skills';
-
-
-
-import {NavBar} from './components/ui/';
+import {Footer, NavBar} from './components/ui/';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -16,7 +12,8 @@ function App() {
       <Banner/>
       <Skills/>
       <Projects/>
-
+      <Contact/>
+      <Footer/>
      
     </div>
   );
